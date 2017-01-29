@@ -8,10 +8,10 @@ Make file executable:
 
     chmod +x eg    
     
-Run it:     
+Run it in current process:     
 
     . eg
-    
-Info:   
+   
+Ref:   
 
 http://stackoverflow.com/questions/255414/why-doesnt-cd-work-in-a-bash-shell-script
