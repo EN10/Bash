@@ -1,9 +1,6 @@
-#Enio's Bash guide#
+#Bash Shortcut#
 
-Create a shortcut:  
--
-
-In eg file: 
+In file eg: 
 
     cd /mnt/c/folder/subfolder
     
