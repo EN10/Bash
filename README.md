@@ -4,7 +4,7 @@ In file eg:
 
     cd /mnt/c/folder/subfolder
     
-Make file executable:   
+Make file executable (needed ?):   
 
     chmod +x eg    
     
