@@ -2,11 +2,11 @@
 
 Bash Shortcut
 -
-eg: 
+File eg: 
 
     cd /mnt/c/folder/subfolder
     
-Run :     
+Run:     
 
     . eg
     
@@ -25,3 +25,7 @@ Extract .tar.gz:
 Bash ~ on windows:
 -
     %localappdata%\Lxss\rootfs
+    
+Append a file:  
+-
+    echo "test" >> test.txt
