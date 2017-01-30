@@ -1,17 +1,27 @@
-#Bash Shortcut#
+#Bash Examples#
 
-In file eg: 
+Bash Shortcut
+-
+eg: 
 
     cd /mnt/c/folder/subfolder
     
-Make file executable (needed ?):   
-
-    chmod +x eg    
-    
-Run it in current process:     
+Run :     
 
     . eg
-   
-Ref:   
-
-http://stackoverflow.com/questions/255414/why-doesnt-cd-work-in-a-bash-shell-script
+    
+Folder Size: 
+-
+    du -h --max-depth=1
+    
+Shorten Path:   
+-
+    PROMPT_DIRTRIM=1
+    
+Extract .tar.gz:    
+-
+    tar -xvzf filename.tar.gz
+    
+Bash ~ on windows:
+-
+    %localappdata%\Lxss\rootfs
