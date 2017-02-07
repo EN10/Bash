@@ -29,3 +29,7 @@ Bash ~ on windows:
 Append a file:  
 -
     echo "test" >> test.txt
+    
+File Word Frequency
+-
+    cat file | tr ' ' '\n' | sort | uniq -c
