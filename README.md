@@ -33,5 +33,5 @@ Append a file:
 File Word Frequency
 -
     cat file | tr ' ' '\n' | sort | uniq -c
-tr ' '  // remove multiple spaces
+tr ' '  // remove multiple spaces   
 '\n'    // output word per line
