@@ -2,11 +2,8 @@
 
 Bash Shortcut
 -
-File eg: 
-
-    cd /mnt/c/folder/subfolder
     
-Run:     
+Run File eg:     
 
     . eg
     
@@ -22,10 +19,6 @@ Extract .tar.gz:
 -
     tar -xvzf filename.tar.gz
     
-Bash ~ on windows:
--
-    %localappdata%\Lxss\rootfs
-    
 Append a file:  
 -
     echo "test" >> test.txt
@@ -35,3 +28,18 @@ File Word Frequency
     cat file | tr ' ' '\n' | sort | uniq -c
 tr ' '  // remove multiple spaces   
 '\n'    // output word per line
+
+Slim Git 
+-
+
+Light Git
+
+    git clone --depth 1 https://github.com/EN10/chatbot.git
+    
+Files Only No Git
+
+    svn export https://github.com/EN10/chatbot/trunk
+
+Bash ~ on windows:
+-
+    %localappdata%\Lxss\rootfs
