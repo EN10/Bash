@@ -1,12 +1,19 @@
 #Bash Examples#
 
+Create file1
+-
+    touch file1
+
+Append a file1:  
+-
+    echo "text" >> file1.txt
+
 Bash Shortcut
 -
-    
-Run File eg:     
+Run file1:     
 
-    . eg
-    
+    . file1
+
 Folder Size: 
 -
     du -h --max-depth=1
@@ -19,16 +26,6 @@ Extract .tar.gz:
 -
     tar -xvzf filename.tar.gz
     
-Append a file:  
--
-    echo "test" >> test.txt
-    
-File Word Frequency
--
-    cat file | tr ' ' '\n' | sort | uniq -c
-tr ' '  // remove multiple spaces   
-'\n'    // output word per line
-
 Slim Git 
 -
 
@@ -39,6 +36,12 @@ Light Git
 Files Only No Git
 
     svn export https://github.com/EN10/chatbot/trunk
+
+File Word Frequency
+-
+    cat file | tr ' ' '\n' | sort | uniq -c
+tr ' '  // remove multiple spaces   
+'\n'    // output word per line
 
 Bash ~ on windows:
 -
