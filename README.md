@@ -45,4 +45,4 @@ tr ' '  // remove multiple spaces
 
 Bash ~ on windows:
 -
-    %localappdata%\Lxss\rootfs
+    %localappdata%\Lxss\home
