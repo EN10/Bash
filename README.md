@@ -37,6 +37,11 @@ Files Only No Git
 
     svn export https://github.com/EN10/chatbot/trunk
 
+Only Download Specific Folder   
+Replace `tree/master` with `trunk`
+
+    svn export https://github.com/GoogleCloudPlatform/python-docs-samples/trunk/appengine/standard/ndb/overview
+
 File Word Frequency
 -
     cat file | tr ' ' '\n' | sort | uniq -c
