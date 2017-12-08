@@ -16,13 +16,15 @@ Run file1:
 
 Folder Size: 
 -
-    du / -h --max-depth=1
+Human readable, Max depth = 1
+
+    du -h1 /
 
 File Size:
 -
 Sorted size human
 
-    ls / -Ssh
+    ls -Ssh /
 
 Shorten Path:   
 -
