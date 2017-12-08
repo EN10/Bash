@@ -16,8 +16,14 @@ Run file1:
 
 Folder Size: 
 -
-    du -h --max-depth=1
-    
+    du / -h --max-depth=1
+
+File Size:
+-
+Sorted size human
+
+    ls / -Ssh
+
 Shorten Path:   
 -
     PROMPT_DIRTRIM=1
