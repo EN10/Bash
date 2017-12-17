@@ -56,6 +56,10 @@ File Word Frequency
 tr ' '  // remove multiple spaces   
 '\n'    // output word per line
 
+Find Installed Package
+-
+    sudo apt list --installed | grep -i lx
+
 Bash ~ on windows:
 -
     %localappdata%\Lxss\home
