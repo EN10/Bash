@@ -60,6 +60,10 @@ Find Installed Package
 -
     sudo apt list --installed | grep -i lx
 
+Find File
+-
+    find / -name *filename*
+
 Bash ~ on windows:
 -
     %localappdata%\Lxss\home
