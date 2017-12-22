@@ -18,7 +18,7 @@ Folder Size:
 -
 Human readable, Max depth = 1
 
-    du -h1 /
+    du -hd1 /
 
 File Size:
 -
