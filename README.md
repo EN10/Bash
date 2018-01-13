@@ -29,7 +29,19 @@ Sorted size human
 Shorten Path:   
 -
     PROMPT_DIRTRIM=1
-    
+
+Compress with `p7zip-full`
+-
+    7z a -mx9 -v100m compressedfilename filetocompress
+
+`-mx9` compression level "ultra"  
+`-v100m`  spilt into 100MB volumes
+
+Extract 7z 
+-
+
+    7z e filename.7z
+
 Extract .tar.gz:    
 -
     tar -xvzf filename.tar.gz
