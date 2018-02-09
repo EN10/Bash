@@ -14,6 +14,12 @@ Run file1:
 
     . file1
 
+Command at Interval: 
+-
+
+    echo "date >> time" > time.sh
+    watch -n 10 bash time.sh
+
 Folder Size: 
 -
 Human readable, Max depth = 1
