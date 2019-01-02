@@ -26,9 +26,9 @@ Run file1:
 
 Folder Size: 
 -
-Human readable, Max depth = 1
+Human readable, Max depth = 1, Sort Human readable
 
-    du -hd1 /
+    sudo du -hd1 / | sort -h
 
 File Size:
 -
