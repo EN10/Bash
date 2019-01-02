@@ -67,6 +67,11 @@ Purge Removed Packages
 -
     dpkg --list |grep "^rc" | cut -d " " -f 3 | xargs sudo dpkg --purge
 
+Render Markdown in Terminal
+-
+    pandoc README.md | lynx -stdin
+    pandoc -t plain README.md | less
+
 Slim Git 
 -
 
