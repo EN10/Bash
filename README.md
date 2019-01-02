@@ -8,17 +8,21 @@ Append a file1:
 -
     echo "text" >> file1.txt
 
+Find File
+-
+    find / -name *filename*
+
+File Word Frequency
+-
+    cat file | tr ' ' '\n' | sort | uniq -c
+tr ' '  // remove multiple spaces   
+'\n'    // output word per line
+
 Bash Shortcut
 -
 Run file1:     
 
     . file1
-
-Command at Interval: 
--
-
-    echo "date >> time" > time.sh
-    watch -n 10 bash time.sh
 
 Folder Size: 
 -
@@ -45,13 +49,24 @@ Compress with `p7zip-full`
 
 Extract 7z 
 -
-
     7z e filename.7z
 
 Extract .tar.gz:    
 -
     tar -xvzf filename.tar.gz
+
+Find Installed Package
+-
+    sudo apt list --installed | grep -i lx
+
+Installed Package By Size
+-
+    dpkg-query -Wf '${Installed-Size}\t${Package}\n' | sort -n
     
+Purge Removed Packages
+-
+    dpkg --list |grep "^rc" | cut -d " " -f 3 | xargs sudo dpkg --purge
+
 Slim Git 
 -
 
@@ -68,28 +83,12 @@ Replace `tree/master` with `trunk`
 
     svn export https://github.com/GoogleCloudPlatform/python-docs-samples/trunk/appengine/standard/ndb/overview
 
-File Word Frequency
--
-    cat file | tr ' ' '\n' | sort | uniq -c
-tr ' '  // remove multiple spaces   
-'\n'    // output word per line
-
-Find Installed Package
--
-    sudo apt list --installed | grep -i lx
-
-Installed Package By Size
--
-    dpkg-query -Wf '${Installed-Size}\t${Package}\n' | sort -n
-    
-Purge Removed Packages
--
-    dpkg --list |grep "^rc" | cut -d " " -f 3 | xargs sudo dpkg --purge
-
-Find File
--
-    find / -name *filename*
-
 Bash ~ on windows:
 -
     %localappdata%\Lxss\home
+    
+Command at Interval: 
+-
+
+    echo "date >> time" > time.sh
+    watch -n 10 bash time.sh
