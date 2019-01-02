@@ -78,6 +78,14 @@ Find Installed Package
 -
     sudo apt list --installed | grep -i lx
 
+Installed Package By Size
+-
+    dpkg-query -Wf '${Installed-Size}\t${Package}\n' | sort -n
+    
+Purge Removed Packages
+-
+    dpkg --list |grep "^rc" | cut -d " " -f 3 | xargs sudo dpkg --purge
+
 Find File
 -
     find / -name *filename*
